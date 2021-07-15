@@ -33,7 +33,7 @@ Sentry.init({
     {
       provide: ErrorHandler,
       useValue: Sentry.createErrorHandler({
-        showDialog: true,
+        showDialog: false,
       }),
     },
     {

@@ -8,7 +8,7 @@ require('dotenv').config();
 
 // `environment.ts` file structure
 const envConfigFile = `export const environment = {
-   release: '${process.env.version}'
+   release: '6.13'
 };
 `;
 
