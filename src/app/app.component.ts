@@ -12,40 +12,42 @@ export class AppComponent {
   textValue = '';
   currentUser = '';
 
-  changeColor() {
-    var that = this;
+  changeColor(): void {
+    const that = this;
     this.color = 'red';
     setTimeout(() => {
-      that.color = 'black'
+      that.color = 'black';
     }, 1500);
   }
 
-  handleSubmit() {
+  handleSubmit(): void {
     this.currentUser = this.textValue;
     // Sentry.configureScope(scope => {
     //   scope.setUser({email: this.currentUser});
     // });
   }
 
-  malformed() {
+  malformed(): void {
     decodeURIComponent('%');
   }
 
   // ERRORS
-  notAFunctionError() {
-    var someArray = [{ func: function () {}}];
+  notAFunctionError(): void {
+    // tslint:disable-next-line:only-arrow-functions
+    const someArray = [{ func: () => {}}];
     someArray[1].func();
   }
 
-  uriError() {
+  uriError(): void {
     decodeURIComponent('%');
   }
 
-  syntaxError() {
+  syntaxError(): void {
+    // tslint:disable-next-line:no-eval
     eval('foo bar');
   }
 
-  rangeError() {
+  rangeError(): void {
     throw new RangeError('Parameter must be between 1 and 100');
   }
 }

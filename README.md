@@ -113,3 +113,6 @@ Go to http://localhost:5000 + click on errors
 
 # Notes
 In case you get lost, the working code can be found in the `final-state` branch (https://github.com/ndmanvar/ng-conf-2020-sentry-workshop/tree/final-code)
+
+
+[https://github.com/apps/sentry-io](https://github.com/apps/sentry-io)

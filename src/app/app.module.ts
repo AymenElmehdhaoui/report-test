@@ -1,20 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {APP_INITIALIZER, ErrorHandler, NgModule} from "@angular/core";
+import {APP_INITIALIZER, ErrorHandler, NgModule} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { Router, RouterModule } from "@angular/router";
+import { Router, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { environment } from './../environments/environment.prod';
+import { environment } from '../environments/environment.prod';
 
-import * as Sentry from "@sentry/angular";
-import { Integrations } from "@sentry/tracing";
+import * as Sentry from '@sentry/angular';
+import { Integrations } from '@sentry/tracing';
 
 Sentry.init({
-  dsn: "https://e117778702c244d1af1afabd3b786566@o477548.ingest.sentry.io/5518792",
+  dsn: 'https://5212e5abec6946d8a6172727701f826f@o920720.ingest.sentry.io/5866678',
   release: environment.release,
   integrations: [
     new Integrations.BrowserTracing({
-      tracingOrigins: ["localhost", "https://yourserver.io/api"],
+      tracingOrigins: ['localhost', 'https://yourserver.io/api'],
       routingInstrumentation: Sentry.routingInstrumentation,
     }),
   ],
