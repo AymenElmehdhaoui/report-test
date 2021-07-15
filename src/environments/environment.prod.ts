@@ -1,3 +1,3 @@
 export const environment = {
-   release: '85c967fc238d2501c66f03f28f4194f7ce4c5692'
+   release: 'be5905184622495c1346b241438f6551574b76d8'
 };
