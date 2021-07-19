@@ -10,7 +10,7 @@ import * as Sentry from '@sentry/angular';
 import { Integrations } from '@sentry/tracing';
 
 Sentry.init({
-  dsn: 'https://6b052d08c82d4ac4bf89800b7b1daa56@o920720.ingest.sentry.io/5867398',
+  dsn: 'https://38337196c9914b2db282e20709e0bb2e@o920720.ingest.sentry.io/5870981',
   release: environment.release,
   integrations: [
     new Integrations.BrowserTracing({
